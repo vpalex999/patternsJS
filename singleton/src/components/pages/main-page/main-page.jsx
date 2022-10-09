@@ -4,7 +4,7 @@ import Singleton from "../../singleton/singleton";
 
 const singletonObject = new Singleton();
 
-function MainPage({ features }) {
+function MainPage() {
   useEffect(() => {
     singletonObject.incSingleton("Главная");
   }, []);
