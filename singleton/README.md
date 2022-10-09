@@ -1,6 +1,7 @@
-# Getting Started with Create React App
+# Паттерн Одиночка(Singleton).
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+При переходе на главную страницу более 5 раз, появляется сообщение.
+
 
 ## Available Scripts
 
