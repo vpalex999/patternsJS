@@ -1,8 +1,7 @@
-import React from "react";
-import FeatureCard from "/src/components/ui/feature-card/feature-card";
 import { Ul, Li } from "/src/components/styled";
 import { Features, StyledButton, StyledTitle } from "./styles";
 import { AppRoute } from "/src/const";
+import FactoryFeatureCard from "/src/components/ui/factory-feature-card/factory-feature-card";
 
 // список преимуществ
 function FeaturesList({
@@ -14,7 +13,7 @@ function FeaturesList({
       <Ul $isGridList>
         {features.map((feature) => (
           <Li key={feature.id}>
-            <FeatureCard {...feature} />
+            <FactoryFeatureCard {...feature} />
           </Li>
         ))}
       </Ul>
