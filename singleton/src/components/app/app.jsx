@@ -13,8 +13,21 @@ function App() {
         <Routes>
           <Route path={AppRoute.MAIN} element={<Layout />}>
             <Route index element={<MainPage />} />
-            <Route path="about" element={<About />} />
+            <Route path={AppRoute.ABOUT} element={<About />} />
           </Route>
+          <Route
+            path="*"
+            element={
+              <>
+                <h1>
+                  404.
+                  <br />
+                  <small>Page not found</small>
+                </h1>
+                <Link to={AppRoute.MAIN}>Go to main page</Link>
+              </>
+            }
+          />
         </Routes>
       </Router>
     </>
